@@ -1,0 +1,30 @@
+@"
+# --- global ignores ---
+.DS_Store
+.env
+*.log
+.vscode/
+*.tmp
+*.bak
+
+# --- frontend (React / Vite / Node) ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.next/
+frontend/.parcel-cache/
+
+# --- backend (ASP.NET Core / C#) ---
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/Migrations/
+backend/*.user
+backend/*.suo
+backend/*.csproj.user
+
+# --- OS/Editor junk ---
+*.swp
+.idea/
+"@ | Out-File .gitignore -Encoding utf8
